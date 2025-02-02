@@ -48,6 +48,7 @@ class _IntroScreenState extends State<IntroScreen> {
                 repeat: true,
                 startDelay: const Duration(seconds: 1),
                 glowCount: 1,
+                
               
                 child: Container(
                   decoration: BoxDecoration(
@@ -85,7 +86,7 @@ class _IntroScreenState extends State<IntroScreen> {
                 style: ButtonStyle(
                   backgroundColor: const WidgetStatePropertyAll(Colors.white),
                   shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
-                  padding: const WidgetStatePropertyAll(EdgeInsets.symmetric(vertical: 10, horizontal: 20))
+                  padding: const WidgetStatePropertyAll(EdgeInsets.symmetric(vertical: 15, horizontal: 30))
                 ),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()));

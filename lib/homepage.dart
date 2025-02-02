@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -18,11 +19,8 @@ class _HomePageState extends State<HomePage> {
   int xScore = 0;
   int filledBoxes = 0;
 
-  // static var myFont = GoogleFonts.pressStart2p(
-  //   textStyle: TextStyle(color: Colors.black, letterSpacing: 3)
-  // );
   static var myFontWhite = GoogleFonts.pressStart2p(
-    textStyle: TextStyle(color: Colors.white, letterSpacing: 3)
+    textStyle: const TextStyle(color: Colors.white, letterSpacing: 3)
   );
 
   @override
@@ -74,10 +72,11 @@ class _HomePageState extends State<HomePage> {
   }
   Widget _buildScoreColumn(String player, int score) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 70),
+      padding: const EdgeInsets.only(left: 20, right: 20, top: 100),
       child: Column(
         children: [
           Text(player, style: myFontWhite,),
+          const SizedBox(height: 10,),
           Text(score.toString(), style: myFontWhite,)
         ],
       ),
@@ -127,7 +126,7 @@ class _HomePageState extends State<HomePage> {
       xScore += 1;
     }
 
-    _showDialog("Gagnat: $winner");
+    _showDialog("Le gagnant est : $winner");
   }
 
   void _showDrawDialog() {
@@ -145,7 +144,7 @@ class _HomePageState extends State<HomePage> {
           content: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
            children: [
-            Text(message),
+            Text(message, style: const TextStyle(fontSize: 20),),
             IconButton(
               onPressed: () {
                 _cleanBoard();
