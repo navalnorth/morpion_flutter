@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="morpion"
+        android:label="Morpion"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
 
