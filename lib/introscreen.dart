@@ -112,8 +112,8 @@ class _IntroScreenState extends State<IntroScreen> {
                       child: Padding(
                         padding: const EdgeInsets.only(top: 50),
                         child: Text(
-                          "Crée par @navalnorth",
-                          style: myFontWhite.copyWith(fontSize: 12),
+                          "Développé par @navalnorth",
+                          style: myFontWhite.copyWith(fontSize: 11),
                         ),
                       ),
                     ),
