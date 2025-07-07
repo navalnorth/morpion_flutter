@@ -13,10 +13,8 @@ class IntroScreen extends StatefulWidget {
 }
 
 class _IntroScreenState extends State<IntroScreen> {
-  static var myFont = GoogleFonts.pressStart2p(
-      textStyle: const TextStyle(color: Colors.black, letterSpacing: 3));
-  static var myFontWhite = GoogleFonts.pressStart2p(
-      textStyle: const TextStyle(color: Colors.white, letterSpacing: 3));
+  static var myFont = GoogleFonts.pressStart2p(textStyle: const TextStyle(color: Colors.black, letterSpacing: 3));
+  static var myFontWhite = GoogleFonts.pressStart2p(textStyle: const TextStyle(color: Colors.white, letterSpacing: 3));
 
   BannerAd? _bannerAdTop;
   BannerAd? _bannerAdBottom;
